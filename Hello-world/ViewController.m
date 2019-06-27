@@ -13,6 +13,7 @@
 @end
 
 @implementation ViewController
+@synthesize theLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -23,7 +24,21 @@
 {
     
     NSLog(@"Button was clicked!!");
+    [theLabel setText:@"How are you today??"];
     
+}
+
+-(IBAction)clickTheSecondButton:(id)sender
+{
+
+    NSLog(@"Hey the Second Button was Clicked!");
+    [theLabel setText:@"cómo estás hoy??"];
+}
+
+-(IBAction)clickTheThirdButton:(id)sender
+{
+    NSLog(@"The third button was clicked!");
+    [theLabel setText:@"Wie geht es dir??"];
 }
 
 - (void)didReceiveMemoryWarning {
